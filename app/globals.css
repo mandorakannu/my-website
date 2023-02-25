@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* Utilities Classes */
-
+*{
+  scroll-behavior: smooth;
+}
 .flex-row-center {
   display: flex;
   flex-direction: row;
