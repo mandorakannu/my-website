@@ -1,5 +1,9 @@
 import "./globals.css";
-
+import { Source_Sans_Pro } from "next/font/google";
+const sans_pro = Source_Sans_Pro({
+  subsets: ["latin"],
+  weight: "600",
+});
 interface MetaDataTypes {
   title: string;
   description: string;
@@ -36,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={sans_pro.className} >{children}</body>
     </html>
   );
 }

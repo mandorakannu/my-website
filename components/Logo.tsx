@@ -1,0 +1,19 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Logo() {
+  return (
+    <>
+      <Link href="/">
+        <Image
+          src="/images/main.webp"
+          alt="logo"
+          width={40}
+          height={40}
+          className="rounded-full pointer-events-none select-none border-2 p-0.5 border-slate-500"
+        />
+      </Link>
+    </>
+  );
+}
