@@ -27,19 +27,19 @@ export default function Mobilebar() {
       <div className={`uppercase text-end list-none relative w-full z-50 bg-red-500 transition-all delay-100 ${opacity} bg-white`}>
         <ul className="absolute bg-white w-full px-6 shadow-md" >
           <li className="my-6">
-            <Link href="/">Home</Link>
+            <Link href="/" className="active:text-blue-500" >Home</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#About">About</Link>
+            <Link href="/#About" className="active:text-blue-500" >About</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Projects">Projects</Link>
+            <Link href="/#Projects" className="active:text-blue-500" >Projects</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Contact">Contact</Link>
+            <Link href="/#Contact" className="active:text-blue-500" >Contact</Link>
           </li>
           <hr />
         </ul>

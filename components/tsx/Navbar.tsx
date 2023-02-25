@@ -12,16 +12,16 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex-row-center gap-10">
-          <Link href="/" className="text-lg">
+          <Link href="/" className="text-lg hover:text-blue-500 transition-all delay-100">
             Home
           </Link>
-          <Link href="#About" className="text-lg">
+          <Link href="#About" className="text-lg hover:text-blue-500 transition-all delay-100">
             About
           </Link>
-          <Link href="#Projects" className="text-lg">
+          <Link href="#Projects" className="text-lg hover:text-blue-500 transition-all delay-100">
             Projects
           </Link>
-          <Link href="#Contact" className="text-lg">
+          <Link href="#Contact" className="text-lg hover:text-blue-500 transition-all delay-100">
             Contact
           </Link>
         </div>
