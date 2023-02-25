@@ -1,0 +1,3 @@
+.slide-left{-webkit-animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes slide-left{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-100px);transform:translateX(-100px)}}@keyframes slide-left{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-100px);transform:translateX(-100px)}}
