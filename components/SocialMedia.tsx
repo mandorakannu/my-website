@@ -10,9 +10,13 @@ type Props = {
     classes: string;
 }
 export default function SocialMedia({ classes }: Props) {
+  window.addEventListener("scroll", () => {
+    const socialMediaIcons = document.querySelector("#scrollToTop");
+    window.scrollY > 200 ? socialMediaIcons?.classList.add("hidden") : socialMediaIcons?.classList.remove("hidden");
+  });
   return (
     <>
-      <div className={classes} >
+      <div className={classes} id="scrollToTop" >
         <Link href="https://github.com/Kannu-Mandora/" target="_blank">
         <AiFillGithub size={30} className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded" />
         </Link>
