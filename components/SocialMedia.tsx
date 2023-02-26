@@ -15,8 +15,8 @@ export default function SocialMedia({ classes }: Props) {
     window.addEventListener("scroll", () => {
       const hideOnScroll = document.getElementById("hideOnScroll");
       window.scrollY > 200
-        ? hideOnScroll?.classList.remove("hidden")
-        : hideOnScroll?.classList.add("hidden");
+        ? hideOnScroll?.classList.add("hidden")
+        : hideOnScroll?.classList.remove("hidden");
     });
   }, []);
 
