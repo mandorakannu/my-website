@@ -21,13 +21,13 @@ export default function About() {
       <div className="flex-col-center py-20 bg-slate-100" id="About" >
         <h2 className="text-5xl">ABOUT ME</h2>
         <hr className="h-1.5 w-8 bg-blue-400 rounded my-8" />
-        <p className="text-center text-xl leading-7 w-full text-gray-600">
+        <p className="text-center text-xl leading-7 w-full text-gray-600 px-4">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms <br /> of programming and technology
         </p>
       </div>
-      <div className="flex-row-around gap-10 px-10 py-20 bg-slate-100">
-        <div className="w-1/2">
+      <div className="flex justify-around items-center max-sm:flex-col gap-10 px-10 max-sm:px-3 py-20 bg-slate-100">
+        <div className="w-1/2 max-sm:w-4/5">
           <h3 className="text-4xl">Get to know me!</h3>
           <div className="my-10 flex-col-center gap-5">
             <p className="leading-7 w-full text-gray-600">
@@ -52,7 +52,7 @@ export default function About() {
         </div>
         <div className="w-1/2">
           <h3 className="text-4xl mb-14">My Skills</h3>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4">
             {skills.map((skill, index) => (
               <Card key={index} skills={skill} />
             ))}
