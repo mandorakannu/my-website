@@ -1,4 +1,5 @@
 import About from "@components/About";
+import Contact from "@components/Contact";
 import Main from "@components/Main";
 import Navigation from "@components/Navigation";
 import Projects from "@components/Projects";
@@ -10,6 +11,7 @@ export default function Home() {
       <Main />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }

@@ -23,6 +23,7 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@assets/*": ["./assets/*"],
+      "@server/*": ["./server/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
