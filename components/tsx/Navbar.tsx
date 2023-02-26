@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Logo from "@components/Logo";
 import Link from "next/link";
+import scollToSection from "@assets/ts/scrollToSection";
 export default function Navbar() {
   return (
     <>
@@ -12,16 +14,16 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex-row-center gap-10">
-          <Link href="/" className="text-lg hover:text-blue-500 transition-all delay-100">
+          <Link href="/" onClick={()=> scollToSection("")} className="text-lg hover:text-blue-500 transition-all delay-100">
             Home
           </Link>
-          <Link href="#About" className="text-lg hover:text-blue-500 transition-all delay-100">
+          <Link href="#About" onClick={()=> scollToSection("About")} className="text-lg hover:text-blue-500 transition-all delay-100">
             About
           </Link>
-          <Link href="#Projects" className="text-lg hover:text-blue-500 transition-all delay-100">
+          <Link href="#Projects" onClick={()=> scollToSection("Projects")} className="text-lg hover:text-blue-500 transition-all delay-100">
             Projects
           </Link>
-          <Link href="#Contact" className="text-lg hover:text-blue-500 transition-all delay-100">
+          <Link href="#Contact" onClick={()=> scollToSection("Contact")} className="text-lg hover:text-blue-500 transition-all delay-100">
             Contact
           </Link>
         </div>

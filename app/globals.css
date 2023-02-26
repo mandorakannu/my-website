@@ -5,6 +5,7 @@
 /* Utilities Classes */
 *{
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 .flex-row-center {
   display: flex;

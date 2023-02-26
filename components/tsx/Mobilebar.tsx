@@ -2,6 +2,7 @@
 import Logo from "@components/Logo";
 import Link from "next/link";
 import React,{useState} from "react";
+import scollToSection from "@assets/ts/scrollToSection";
 
 export default function Mobilebar() {
   const [visible, setVisible] = useState<string>("hidden");
@@ -27,19 +28,19 @@ export default function Mobilebar() {
       <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 ${visible} bg-white`}>
         <ul className="fixed bg-white w-full px-6 shadow-md" >
           <li className="my-6">
-            <Link href="/" className="active:text-blue-500" >Home</Link>
+            <Link href="/" onClick={()=>scollToSection("")} className="active:text-blue-500" >Home</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#About" className="active:text-blue-500" >About</Link>
+            <Link href="/#About" onClick={()=>scollToSection("About")} className="active:text-blue-500" >About</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Projects" className="active:text-blue-500" >Projects</Link>
+            <Link href="/#Projects" onClick={()=>scollToSection("Projects")} className="active:text-blue-500" >Projects</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Contact" className="active:text-blue-500" >Contact</Link>
+            <Link href="/#Contact" onClick={()=>scollToSection("Contact")} className="active:text-blue-500" >Contact</Link>
           </li>
           <hr />
         </ul>
