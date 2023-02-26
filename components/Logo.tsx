@@ -11,7 +11,7 @@ export default function Logo() {
           alt="logo"
           width={40}
           height={40}
-          className="rounded-full pointer-events-none select-none border-2 p-0.5 border-slate-500"
+          className="rounded-full pointer-events-none select-none border-2 p-0.5 border-blue-500"
         />
       </Link>
     </>

@@ -15,14 +15,14 @@ export default function Mobilebar() {
   }
   return (
     <>
-      <div className="flex justify-between items-center px-3 py-4 sticky top-0 sm:hidden uppercase bg-white border-b-2 border-black">
+      <div className="flex justify-between items-center px-3 py-4 sticky top-0 z-50 sm:hidden uppercase bg-white border-b border-blue-400">
         <div className="flex-row-center gap-3">
           <Logo />
           <Link href="/">Kannu Mandora</Link>
         </div>
         <div className="space-y-2 rotate-180" onClick={showHamber}>
-          <span className="block w-5 h-0.5 bg-black"></span>
-          <span className="block w-8 h-0.5 bg-black"></span>
+          <span className="block w-5 h-0.5 bg-blue-400"></span>
+          <span className="block w-8 h-0.5 bg-blue-400"></span>
         </div>
       </div>
       <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 ${visible} bg-white`}>
