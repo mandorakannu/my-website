@@ -4,12 +4,12 @@ import Link from "next/link";
 import React,{useState} from "react";
 
 export default function Mobilebar() {
-  const [opacity, setOpacity] = useState<string>("opacity-0");
+  const [visible, setVisible] = useState<string>("hidden");
   const showHamber = () => {
-    if (opacity === "opacity-0") {
-      setOpacity("opacity-100");
+    if (visible === "hidden") {
+      setVisible("block");
     } else {
-      setOpacity("opacity-0");
+      setVisible("hidden");
     }
   }
   return (
@@ -24,8 +24,8 @@ export default function Mobilebar() {
           <span className="block w-8 h-0.5 bg-black"></span>
         </div>
       </div>
-      <div className={`uppercase text-end list-none relative w-full z-50 bg-red-500 transition-all delay-100 ${opacity} bg-white`}>
-        <ul className="absolute bg-white w-full px-6 shadow-md" >
+      <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 ${visible} bg-white`}>
+        <ul className="fixed bg-white w-full px-6 shadow-md" >
           <li className="my-6">
             <Link href="/" className="active:text-blue-500" >Home</Link>
           </li>
