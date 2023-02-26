@@ -42,6 +42,6 @@
 }
 .background-image-glass {
   background-image: url("../public/images/background.svg");
-  height: calc(100vh - 5rem);
-  background-repeat: no-repeat;
+  height: auto;
+  background-repeat: repeat;
 }
