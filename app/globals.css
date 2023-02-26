@@ -33,6 +33,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.flex-row-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .background-image-glass {
   background-image: url("../public/images/background.svg");
   height: calc(100vh - 5rem);

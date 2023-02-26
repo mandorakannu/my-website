@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Shri Ram College",
+        "desc": "Shri Ram College is a MERN Stack College project based on Students, teachers and admins.",
+        "image": "shriram.png",
+        "link": "https://shriramcollege.cyclic.app"
+    },
+    {
+        "title": "Aman Chopra",
+        "desc": " Aman Chopra is a clone project of a famous YouTuber Aman Chopra.",
+        "image": "aman.png",
+        "link": "https://aman-chopra.vercel.app/"
+    },
+    {
+        "title": "TODO List",
+        "desc": "TODO List is a simple project based on HTML, CSS & JavaScript.",
+        "image": "todo.png",
+        "link": "https://todo-nine-sigma.vercel.app/"
+    },
+    {
+        "title": "Covid Stats Checker",
+        "desc": "Covid Stats Checker is a simple project based on React.Js. It shows the stats of Covid-19 in any country.",
+        "image": "covid.png",
+        "link": "https://covid-stats-checker.vercel.app/"
+    }
+]
