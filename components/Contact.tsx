@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { Outfit } from "next/font/google";
+import { Rings } from "react-loader-spinner";
 import axios from "axios";
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 export default function Contact() {
+  const [loading, setLoading] = useState<any>("Send Message");
   const [client, setClient] = useState({
     email: "",
     subject: "",
@@ -18,16 +20,29 @@ export default function Contact() {
   };
   const onSubmitHandler = async (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
+    setLoading(
+      <Rings
+        height="60"
+        width="80"
+        color="#fff"
+        radius="6"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+        ariaLabel="rings-loading"
+      />
+    );
     const { email, subject, message } = client;
     try {
       if (!email || !subject || !message)
         return window.alert("Please fill all the fields");
       const res = await axios.post("/api/form", { email, subject, message });
-      if(res.status === 200) {
+      if (res.status === 200) {
         setClient({ email: "", subject: "", message: "" });
+        setLoading("SEND MESSAGE");
         window.alert("Message sent successfully");
-      }
-      else {
+      } else {
+        setLoading("SEND MESSAGE");
         window.alert("Something went wrong");
       }
     } catch (err: Error | any) {
@@ -101,10 +116,10 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-blue-400 px-10 py-3 uppercase text-white rounded tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500 border-2"
+                className="flex-row-center py-3 px-10 w-52 h-14 overflow-hidden bg-blue-400 uppercase text-white rounded hover:shadow-2xl transition-all delay-100 hover:border-sky-500 border-2 text-center"
                 onClick={onSubmitHandler}
               >
-                Send message
+                {loading}
               </button>
             </form>
           </div>
