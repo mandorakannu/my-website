@@ -51,7 +51,7 @@ export default function Contact() {
   };
   return (
     <>
-      <div className={`background-image-glass ${outfit.className}`} id="Contact">
+      <div className={`${outfit.className} bg-zinc-100`} id="Contact">
         <section className="py-20">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900">

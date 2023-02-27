@@ -41,8 +41,3 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.background-image-glass {
-  background-image: url("../public/images/background.svg");
-  height: auto;
-  background-repeat: repeat;
-}
