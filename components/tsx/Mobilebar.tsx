@@ -25,7 +25,7 @@ export default function Mobilebar() {
           <span className="block w-8 h-0.5 bg-blue-400"></span>
         </div>
       </div>
-      <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 sm:hidden ${visible} bg-white`}>
+      <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 sm:hidden ${visible} bg-white`} id="hambar">
         <ul className="fixed bg-white w-full px-6 shadow-md" >
           <li className="my-6">
             <Link href="/" onClick={()=>scollToSection("")} className="active:text-blue-500" >Home</Link>
