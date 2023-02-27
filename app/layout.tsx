@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Source_Sans_Pro } from "next/font/google";
+import { AnalyticsWrapper } from "@components/Analytics";
 const sans_pro = Source_Sans_Pro({
   subsets: ["latin"],
   weight: "600",
@@ -83,7 +84,9 @@ export default function RootLayout({
   return (
     <>
     <html lang="en">
-      <body className={sans_pro.className} >{children}</body>
+      <body className={sans_pro.className} >{children}
+      <AnalyticsWrapper />
+      </body>
     </html>
     </>
   );
