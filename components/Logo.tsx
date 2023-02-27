@@ -7,6 +7,8 @@ export default function Logo() {
     <>
       <Link href="/">
         <Image
+          quality={100}
+          priority={true}
           src="/images/main.webp"
           alt="logo"
           width={40}
