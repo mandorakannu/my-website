@@ -18,7 +18,7 @@ export default function Mobilebar() {
       <div className="flex justify-between items-center px-3 py-4 sticky top-0 z-50 sm:hidden uppercase bg-white border-b border-blue-400">
         <div className="flex-row-center gap-3">
           <Logo />
-          <Link href="/">Kannu Mandora</Link>
+          <Link href="/" onClick={()=> window.scrollTo(0,0)} >Kannu Mandora</Link>
         </div>
         <div className="space-y-2 rotate-180" onClick={showHamber}>
           <span className="block w-5 h-0.5 bg-blue-400"></span>
