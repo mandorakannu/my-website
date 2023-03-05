@@ -5,7 +5,7 @@ export default function About() {
   const skills = [
     "HTML",
     "CSS",
-    "Tailwindcss",
+    "Tailwind",
     "JavaScript",
     "React.Js",
     "Next.Js",
@@ -28,7 +28,7 @@ export default function About() {
       </div>
       <div className="flex justify-around items-center max-sm:flex-col gap-10 px-10 max-sm:px-3 py-20 bg-slate-100">
         <div className="w-1/2 max-sm:w-4/5">
-          <h3 className="text-4xl">Get to know me!</h3>
+          <h3 className="text-4xl text-center">Get to know me!</h3>
           <div className="my-10 flex-col-center gap-5">
             <p className="leading-7 w-full text-gray-600">
               I&apos;m a Full Stack [MERN STACK] Web Developer building the
@@ -51,7 +51,7 @@ export default function About() {
           </div>
         </div>
         <div className="w-1/2">
-          <h3 className="text-4xl mb-14">My Skills</h3>
+          <h3 className="text-4xl mb-14 text-center">My Skills</h3>
           <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4">
             {skills.map((skill, index) => (
               <Card key={index} skills={skill} />

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <>
-      <Link href="/">
+      <Link href="/" onClick={()=> window.scrollTo(0,0)}>
         <Image
           quality={100}
           priority={true}
