@@ -18,7 +18,7 @@ export default function Projects() {
           created with each project <br /> containing its own case study
         </p>
       </div>
-      <div>
+      <div className="py-20" >
         {data.map((project) => (
           <div className="grid grid-cols-2 max-sm:grid-cols-1" key={project.title}>
             <Image
@@ -32,7 +32,7 @@ export default function Projects() {
             <div className="flex flex-col justify-center items-start max-sm:items-center gap-6">
               <h2 className="text-4xl">{project.title}</h2>
               <p className={`w-2/3 ${outfit.className}`}>{project.desc}</p>
-              <Link href={project.link} className="bg-blue-400 px-10 py-3 uppercase text-white rounded tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500" target="_blank">View Project</Link>
+              <Link href={project.link} className="bg-blue-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500" target="_blank">View Project</Link>
             </div>
           </div>
         ))}
