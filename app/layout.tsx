@@ -21,6 +21,8 @@ interface MetaDataTypes {
   type: string;
   twitter: Object;
   verification: Object;
+  favicon: Object;
+  category: string;
 }
 export const metadata: MetaDataTypes = {
   title: "Kannu Mandora | Full Stack Developer",
@@ -57,7 +59,7 @@ export const metadata: MetaDataTypes = {
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -66,7 +68,7 @@ export const metadata: MetaDataTypes = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kannu Mandora | Full Stack Developer',
-    description: 'This is my personal website. I am a developer who shares insightful on web development, software engineering, and programming languages.',
+    description: "Hi, it's me Kannu Mandora. I want to be a Full Stack Developer. I am currently focused on my skills in React, Node, and Express. I am also learning about MySQL and MongoDB. I am also a computer student at the College of SETH G.L. BIHANI S.D. P.G. COLLEGE at Sriganganagar.",
     siteId: '@mandorakannu',
     creator: '@KannuMandora',
     creatorId: '1467726470533754880',
@@ -74,7 +76,16 @@ export const metadata: MetaDataTypes = {
   },
   verification: {
     google: '_RMbn1Udckop0qHdoAu_PoiGFWqwB19CecNEqZfHxAE',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['mandorakannu@gmail.com'],
+    },
   },
+  favicon: {
+    ico: '/favicon.ico',
+  },
+  category: 'Web Development',
 };
 export default function RootLayout({
   children,
