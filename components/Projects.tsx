@@ -18,7 +18,7 @@ export default function Projects() {
           created with each project <br /> containing its own case study
         </p>
       </div>
-      <div>
+      <div className="py-20" >
         {data.map((project) => (
           <div className="grid grid-cols-2 max-sm:grid-cols-1" key={project.title}>
             <Image
