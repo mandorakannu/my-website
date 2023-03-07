@@ -2,6 +2,7 @@
 import Logo from "@components/Logo";
 import Link from "next/link";
 import scollToSection from "@assets/ts/scrollToSection";
+import SocialMedia from "@components/SocialMedia";
 
 export default function Mobilebar() {
   const showHamber = () => {
@@ -35,6 +36,10 @@ export default function Mobilebar() {
           <hr />
           <li className="my-6">
             <Link href="/#Contact" onClick={()=>scollToSection("Contact")} className="active:text-blue-500" >Contact</Link>
+          </li>
+          <hr />
+          <li className="my-6">
+            <SocialMedia classes="flex justify-end items-end gap-5" />
           </li>
           <hr />
         </ul>
