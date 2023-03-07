@@ -1,6 +1,4 @@
-"use client";
 import Link from "next/link";
-import React, { useEffect } from "react";
 import {
   AiFillLinkedin,
   AiFillTwitterSquare,
@@ -11,14 +9,6 @@ type Props = {
   classes: string;
 };
 export default function SocialMedia({ classes }: Props) {
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const hideOnScroll = document.getElementById("hideOnScroll");
-      window.scrollY > 200
-        ? hideOnScroll?.classList.add("hidden")
-        : hideOnScroll?.classList.remove("hidden");
-    });
-  }, []);
 
   return (
     <>
