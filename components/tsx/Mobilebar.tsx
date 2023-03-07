@@ -1,17 +1,12 @@
 "use client";
 import Logo from "@components/Logo";
 import Link from "next/link";
-import React,{useState} from "react";
 import scollToSection from "@assets/ts/scrollToSection";
+import SocialMedia from "@components/SocialMedia";
 
 export default function Mobilebar() {
-  const [visible, setVisible] = useState<string>("hidden");
   const showHamber = () => {
-    if (visible === "hidden") {
-      setVisible("block");
-    } else {
-      setVisible("hidden");
-    }
+    document.getElementById("hambar")?.classList.toggle("hidden");
   }
   return (
     <>
@@ -25,7 +20,7 @@ export default function Mobilebar() {
           <span className="block w-8 h-0.5 bg-blue-400"></span>
         </div>
       </div>
-      <div className={`uppercase text-end list-none relative w-full z-50 transition-all delay-100 sm:hidden ${visible} bg-white`} id="hambar">
+      <div className="uppercase text-end list-none relative w-full z-50 transition-all delay-100 sm:hidden bg-white" id="hambar">
         <ul className="fixed bg-white w-full px-6 shadow-md" >
           <li className="my-6">
             <Link href="/" onClick={()=>scollToSection("")} className="active:text-blue-500" >Home</Link>
@@ -41,6 +36,10 @@ export default function Mobilebar() {
           <hr />
           <li className="my-6">
             <Link href="/#Contact" onClick={()=>scollToSection("Contact")} className="active:text-blue-500" >Contact</Link>
+          </li>
+          <hr />
+          <li className="my-6">
+            <SocialMedia classes="flex justify-end items-end gap-5" />
           </li>
           <hr />
         </ul>
