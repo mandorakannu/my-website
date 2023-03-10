@@ -3,13 +3,13 @@ import {
   AiFillLinkedin,
   AiFillTwitterSquare,
   AiFillGithub,
+  AiFillInstagram,
 } from "react-icons/ai";
 
 type Props = {
   classes: string;
 };
 export default function SocialMedia({ classes }: Props) {
-
   return (
     <>
       <div className={classes} id="hideOnScroll">
@@ -27,6 +27,12 @@ export default function SocialMedia({ classes }: Props) {
         </Link>
         <Link href="https://twitter.com/KannuMandora" target="_blank">
           <AiFillTwitterSquare
+            size={30}
+            className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded"
+          />
+        </Link>
+        <Link href="https://instagram.com/mandorakannu" target="_blank">
+          <AiFillInstagram
             size={30}
             className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded"
           />
