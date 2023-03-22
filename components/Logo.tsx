@@ -9,11 +9,11 @@ export default function Logo() {
         <Image
           quality={100}
           priority={true}
-          src="/images/main.webp"
+          src="/images/logo.png"
           alt="logo"
           width={40}
           height={40}
-          className="rounded-full pointer-events-none select-none border-2 p-0.5 border-blue-500"
+          className="rounded-full pointer-events-none select-none border-2 p-0.5 border-sky-500 bg-blue-600"
         />
       </Link>
     </>
