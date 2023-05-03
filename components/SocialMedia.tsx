@@ -19,7 +19,7 @@ export default function SocialMedia({ classes }: Props) {
             className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded"
           />
         </Link>
-        <Link href="https://www.linkedin.com/in/kannu-mandora-3132b1214/" target="_blank">
+        <Link href="https://www.linkedin.com/in/mandorkannu" target="_blank">
           <AiFillLinkedin
             size={30}
             className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded"
