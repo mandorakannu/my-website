@@ -1,13 +1,27 @@
-import Image from "next/image";
 import React from "react";
 import { Outfit } from "next/font/google";
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: "300",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-import data from "@assets/json/projects.json";
 import Link from "next/link";
-export default function Projects() {
+
+type ProjectProps = {
+  _id: string;
+  title: string;
+  desc: string;
+  link: string;
+  image?: string;
+}[];
+
+async function getLinks() {
+  const res = await fetch(`https://${process.env.VERCEL_URL}/api/projects`);
+  const projects: ProjectProps = await res.json();
+  return projects;
+}
+
+export default async function Projects() {
+  const projects = await getLinks();
   return (
     <>
       <div className="flex-col-center py-20 bg-white" id="Projects">
@@ -18,24 +32,31 @@ export default function Projects() {
           created with each project <br /> containing its own case study
         </p>
       </div>
-      <div className="py-20" >
-        {data.map((project) => (
-          <div className="grid grid-cols-2 max-sm:grid-cols-1" key={project.title}>
-            <Image
-              src={`/images/${project.image}`}
-              width={500}
-              height={500}
-              alt={project.title}
-              title={project.title}
-              className="mix-blend-multiply"
-            />
-            <div className="flex flex-col justify-center items-start max-sm:items-center gap-6">
-              <h2 className="text-4xl">{project.title}</h2>
-              <p className={`w-2/3 ${outfit.className}`}>{project.desc}</p>
-              <Link href={project.link} className="bg-blue-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500" target="_blank">View Project</Link>
-            </div>
-          </div>
-        ))}
+      <div className={`py-20 ${outfit.className}`}>
+        {projects.map((project) => {
+          return (
+            <>
+              <div
+                key={project._id}
+                className="flex justify-between items-center gap-10 px-20 py-10"
+              >
+                <div className="flex flex-col gap-3">
+                  <h1 className="text-bold text-xl">{project.title}</h1>
+                  <h2 className="text-lg font-normal text-blue-300">
+                    {project.desc}
+                  </h2>
+                </div>
+                <Link
+                  href={project.link}
+                  className="bg-blue-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500"
+                  target="_blank"
+                >
+                  View Project
+                </Link>
+              </div>
+            </>
+          );
+        })}
       </div>
     </>
   );
