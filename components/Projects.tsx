@@ -15,12 +15,12 @@ type ProjectProps = {
 }[];
 
 async function getLinks() {
-  const res = await fetch(`https://${process.env.VERCEL_URL}/api/projects`);
+  const res = await fetch(`https://${process.env.VERCEL_URL || "localhost:3000"}/api/projects`);
   const projects: ProjectProps = await res.json();
   return projects;
 }
 
-export default async function Projects() {
+export default async function Projects(): Promise<JSX.Element> {
   const projects = await getLinks();
   return (
     <>
@@ -33,9 +33,7 @@ export default async function Projects() {
         </p>
       </div>
       <div className={`py-20 ${outfit.className}`}>
-        {projects.map((project) => {
-          return (
-            <>
+        {projects.map((project) => (
               <div
                 key={project._id}
                 className="flex justify-between items-center gap-10 px-20 py-10"
@@ -54,9 +52,7 @@ export default async function Projects() {
                   View Project
                 </Link>
               </div>
-            </>
-          );
-        })}
+        ))}
       </div>
     </>
   );

@@ -11,6 +11,8 @@ export default function Home() {
       <Navigation />
       <Main />
       <About />
+      {/* @ts-ignore */}
+      {/* Upper comment is used because production build is fail */}
       <Projects />
       <Contact />
       <Footer />
