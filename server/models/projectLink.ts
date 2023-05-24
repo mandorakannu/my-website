@@ -1,4 +1,4 @@
-import {Schema, model} from "mongoose";
+import mongoose, {Schema} from "mongoose";
 const projectLinks = new Schema({
     title: {
         type: String,
@@ -17,5 +17,4 @@ const projectLinks = new Schema({
     },
 });
 
-const links = model("link", projectLinks);
-export default links;
+export default mongoose.models.projectLinks || mongoose.model("link", projectLinks);
