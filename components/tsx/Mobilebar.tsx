@@ -31,6 +31,10 @@ export default function Mobilebar() {
           </li>
           <hr />
           <li className="my-6">
+            <Link href="https://www.mandorakannu.me" className="active:text-blue-500" >My Blogs</Link>
+          </li>
+          <hr />
+          <li className="my-6">
             <Link href="/#Projects" onClick={()=>scollToSection("Projects")} className="active:text-blue-500" >Projects</Link>
           </li>
           <hr />

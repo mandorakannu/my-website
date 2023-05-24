@@ -20,6 +20,9 @@ export default function Navbar() {
           <Link href="#About" onClick={()=> scollToSection("About")} className="text-lg hover:text-blue-500 transition-all delay-100">
             About
           </Link>
+          <Link href="https://www.mandorakannu.me" target="_blank" className="text-lg hover:text-blue-500 transition-all delay-100">
+            My Blogs
+          </Link>
           <Link href="#Projects" onClick={()=> scollToSection("Projects")} className="text-lg hover:text-blue-500 transition-all delay-100">
             Projects
           </Link>
