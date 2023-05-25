@@ -17,7 +17,7 @@ export default function Projects(): JSX.Element {
         </p>
       </div>
         <div className={`py-20 ${outfit.className}`}>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">Kannu Mandora Tech Blogs</h1>
               <h2 className="text-lg font-normal text-blue-300">
@@ -32,7 +32,7 @@ export default function Projects(): JSX.Element {
               View Project
             </Link>
           </div>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">Shri Ram College</h1>
               <h2 className="text-lg font-normal text-blue-300">
@@ -47,7 +47,7 @@ export default function Projects(): JSX.Element {
               View Project
             </Link>
           </div>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">Covid Stats Checker</h1>
               <h2 className="text-lg font-normal text-blue-300">
@@ -62,7 +62,7 @@ export default function Projects(): JSX.Element {
               View Project
             </Link>
           </div>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">Second Portfolio</h1>
               <h2 className="text-lg font-normal text-blue-300">
@@ -77,7 +77,7 @@ export default function Projects(): JSX.Element {
               View Project
             </Link>
           </div>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">Weather App</h1>
               <h2 className="text-lg font-normal text-blue-300">
@@ -92,7 +92,7 @@ export default function Projects(): JSX.Element {
               View Project
             </Link>
           </div>
-          <div className="flex justify-between items-center gap-10 px-20 py-10">
+          <div className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10">
             <div className="flex flex-col gap-3">
               <h1 className="text-bold text-xl">GitHub Profile Finder</h1>
               <h2 className="text-lg font-normal text-blue-300">
