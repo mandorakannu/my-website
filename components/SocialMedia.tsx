@@ -13,7 +13,7 @@ export default function SocialMedia({ classes }: Props) {
   return (
     <>
       <div className={classes} id="hideOnScroll">
-        <Link href="https://github.com/Kannu-Mandora/" target="_blank">
+        <Link href="https://github.com/mandorakannu/" target="_blank">
           <AiFillGithub
             size={30}
             className="hover:bg-blue-200 transition-all delay-100 p-1 scale-125 rounded"
