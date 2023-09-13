@@ -27,7 +27,7 @@ interface MetaDataTypes {
 export const metadata: MetaDataTypes = {
   title: "Kannu Mandora | Full Stack Developer",
   description:
-    "Hi, it's me Kannu Mandora. I want to be a Full Stack Developer. I am currently focused on my skills in React, Node, and Express. I am also learning about MySQL and MongoDB. I am also a computer student at the College of SETH G.L. BIHANI S.D. P.G. COLLEGE at Sriganganagar.",
+    "Hi, it's me Kannu Mandora. I want to be a Full Stack Developer. I am currently focused on my skills in React, Node, and Express.",
   keywords:
     ["Kannu", "Kannu Mandora", "Mandora","Web Developer", "Full Stack", "MERN Stack", "Stack", "Full Stack Developer", "Mandora Kannu", "tech blogger", "developer", "web development", "software engineering", "programming languages"],
   httpEquiv: "Content-Type",

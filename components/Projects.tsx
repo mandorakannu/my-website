@@ -55,10 +55,10 @@ export default function Projects(): JSX.Element {
             className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10"
           >
             <div className="flex flex-col gap-3">
-              <h1 className="text-bold text-xl">{element.title}</h1>
-              <h2 className="text-lg font-normal text-blue-600">
+              <h4 className="text-bold text-xl">{element.title}</h4>
+              <h5 className="text-lg font-normal text-blue-600">
                 {element.description}
-              </h2>
+              </h5>
             </div>
             <Link
               href={element.link}
