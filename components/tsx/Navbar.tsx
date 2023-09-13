@@ -17,18 +17,18 @@ export default function Navbar() {
           <Link href="/" onClick={()=> scollToSection("")} className="text-lg hover:text-blue-500 transition-all delay-100">
             Home
           </Link>
-          <Link href="#About" onClick={()=> scollToSection("About")} className="text-lg hover:text-blue-500 transition-all delay-100">
+          <a href="#About" className="text-lg hover:text-blue-500 transition-all delay-100">
             About
-          </Link>
+          </a>
           <Link href="https://www.mandorakannu.me" target="_blank" className="text-lg hover:text-blue-500 transition-all delay-100">
             My Blogs
           </Link>
-          <Link href="#Projects" onClick={()=> scollToSection("Projects")} className="text-lg hover:text-blue-500 transition-all delay-100">
+          <a href="#Projects" className="text-lg hover:text-blue-500 transition-all delay-100">
             Projects
-          </Link>
-          <Link href="#Contact" onClick={()=> scollToSection("Contact")} className="text-lg hover:text-blue-500 transition-all delay-100">
+          </a>
+          <a href="#Contact" className="text-lg hover:text-blue-500 transition-all delay-100">
             Contact
-          </Link>
+          </a>
         </div>
       </div>
     </>

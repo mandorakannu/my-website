@@ -27,7 +27,7 @@ export default function Mobilebar() {
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#About" onClick={()=>scollToSection("About")} className="active:text-blue-500" >About</Link>
+            <Link href="/#About" className="active:text-blue-500" >About</Link>
           </li>
           <hr />
           <li className="my-6">
@@ -35,11 +35,11 @@ export default function Mobilebar() {
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Projects" onClick={()=>scollToSection("Projects")} className="active:text-blue-500" >Projects</Link>
+            <Link href="/#Projects"  className="active:text-blue-500" >Projects</Link>
           </li>
           <hr />
           <li className="my-6">
-            <Link href="/#Contact" onClick={()=>scollToSection("Contact")} className="active:text-blue-500" >Contact</Link>
+            <Link href="/#Contact" className="active:text-blue-500" >Contact</Link>
           </li>
           <hr />
           <li className="my-6">

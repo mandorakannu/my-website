@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 /* Utilities Classes */
-*{
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+* {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 4.5rem !important;
 }
 .flex-row-center {
   display: flex;

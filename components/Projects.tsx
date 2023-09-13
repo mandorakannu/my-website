@@ -40,7 +40,7 @@ export default function Projects(): JSX.Element {
               </h2>
             </div>
             <Link
-              href="https://shriramcollege.onrender.com/"
+              href="https://shriramcollege.cyclic.cloud/"
               className="bg-blue-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-sky-500"
               target="_blank"
             >
