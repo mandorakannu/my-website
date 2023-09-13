@@ -15,6 +15,9 @@ export default function About() {
     "Mongoose",
     "Git",
     "GitHub",
+    "TypeScript",
+    "PHP",
+    "MySQL",
   ];
   return (
     <>
@@ -50,9 +53,9 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <h3 className="text-4xl mb-14 text-center">My Skills</h3>
-          <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {skills.map((skill, index) => (
               <Card key={index} skills={skill} />
             ))}

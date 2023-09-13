@@ -20,7 +20,7 @@ export default function Navbar() {
           <a href="#About" className="text-lg hover:text-blue-500 transition-all delay-100">
             About
           </a>
-          <Link href="https://www.mandorakannu.me" target="_blank" className="text-lg hover:text-blue-500 transition-all delay-100">
+          <Link href="https://www.mandorakannu.me" target="_blank" className="text-lg hover:text-red-500 transition-all delay-100">
             My Blogs
           </Link>
           <a href="#Projects" className="text-lg hover:text-blue-500 transition-all delay-100">
